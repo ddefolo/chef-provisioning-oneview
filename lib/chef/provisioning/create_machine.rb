@@ -180,7 +180,7 @@ module CreateMachine
     details = rest_api(:oneview, :get, "/rest/index/resources/#{volume_uri}")
     v['volumeName'] = details['name']
     attribs = volumeDatails['attributes']
-    if !attribs.nil 
+    if !attribs.nil?
       v['permanent'] = attribs['storage_volume_ispermanent']
       v['volumeShareable'] = attribs['storage_volume_shareable']
       v['volumeProvisionType'] = attribs['storage_volume_provision_type']
