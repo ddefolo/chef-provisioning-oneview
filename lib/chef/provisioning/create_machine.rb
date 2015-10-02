@@ -139,7 +139,7 @@ module CreateMachine
         v['state'] = nil
         v['status'] = nil      
         v['storagePaths'].each do |s|
-          v['status'] = nil      
+          s['status'] = nil      
         end
         full_vol_info = fill_volume_details(v)
  
